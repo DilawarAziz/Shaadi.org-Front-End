@@ -2,32 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.bgwhite {
+  background-image: url('/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png');
+  background-repeat: repeat;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.cool-link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.cool-link:hover::after {
+  width: 100%;
+  /* //transition: width .3s; */
 }
