@@ -5,7 +5,6 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
     theme: {
       keyframes: {
         slideAnimation: {
@@ -40,7 +39,6 @@ module.exports = {
             'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         },
       },
-    },
   },
   plugins: [],
 };
