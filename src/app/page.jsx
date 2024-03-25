@@ -1,12 +1,12 @@
-import NavBar from "@/components/header/header";
-import Button from "@/components/ui/button";
+import NavBar from "../components/header/header";
+import Button from "../components/ui/button";
 import Image from "next/image";
 import { TiTick } from "react-icons/ti";
 import { CiGlobe } from "react-icons/ci";
-import Proposals from "@/components/sections/proposals";
+import Proposals from "../components/sections/proposals";
 import { FaUser } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import Getnow from "@/components/sections/getnow";
+import Getnow from "../components/sections/getnow";
 export default function Home() {
   return (
     <main>

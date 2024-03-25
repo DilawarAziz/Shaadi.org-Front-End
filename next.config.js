@@ -1,11 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export',
-    images: {
-        unoptimized: true,
-        // domains: ['majesticowls.com'], 
-    },
-    reactStrictMode: true,
-}
+const nextConfig = {};
 
-module.exports = nextConfig
+export default nextConfig;

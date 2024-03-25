@@ -2,8 +2,8 @@
 import { React, useEffect } from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header/header";
-import Footer from "@/components/footer";
+import Header from "../components/Header/header";
+import Footer from "../components/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const inter = Inter({ subsets: ["latin"] });

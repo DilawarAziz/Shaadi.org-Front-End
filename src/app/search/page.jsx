@@ -1,7 +1,7 @@
 import React from "react";
-import Accordion from "@/components/sections/accordion";
-import Button from "@/components/ui/button";
-import SearchCard from "@/components/cards/search-card";
+import Accordion from "../components/sections/accordion";
+import Button from "../components/ui/button";
+import SearchCard from "../components/cards/search-card";
 import Image from "next/image";
 
 function Page() {

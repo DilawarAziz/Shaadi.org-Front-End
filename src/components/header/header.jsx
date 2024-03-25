@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Headerslider from "./headerslider";
-import Button from "../ui/button";
 import Dropdown from "./dropdown";
 import { FaUser } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
