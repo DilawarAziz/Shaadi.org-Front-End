@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import Button from "../../components/ui/Button";
+import Button from "../../components/ui/button";
 import TextFeild from "../../components/forms/textfeild";
 import { useRouter } from "next/navigation";
 import axios from "axios";

@@ -2,7 +2,7 @@
 import { React, useEffect } from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header/header";
+import Header from "../components/header/header";
 import Footer from "../components/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";

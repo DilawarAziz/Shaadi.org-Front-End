@@ -1,4 +1,3 @@
-import NavBar from "../components/header/header";
 import Button from "../components/ui/button";
 import Image from "next/image";
 import { TiTick } from "react-icons/ti";
