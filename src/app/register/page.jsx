@@ -3,14 +3,14 @@ import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import Button from "../components/ui/Button";
-import TextFeild from "../components/forms/TextFeild";
+import Button from "../../components/ui/Button";
+import TextFeild from "../../components/forms/TextFeild";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import SelectInput from "../components/forms/select";
-import { GetUser } from "../components/token";
+import SelectInput from "../../components/forms/select";
+import { GetUser } from "../../components/token";
 const Page = () => {
   const [loader, setLoader] = useState(false);
   const router = useRouter();

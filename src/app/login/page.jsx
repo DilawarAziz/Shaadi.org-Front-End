@@ -3,13 +3,13 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import Button from "../components/ui/Button";
-import TextFeild from "../components/forms/textfeild";
+import Button from "../../components/ui/Button";
+import TextFeild from "../../components/forms/textfeild";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import Loader from "../components/loader";
+// import Loader from "../../components/loader";
 
 
 const Page = () => {
