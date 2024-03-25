@@ -1,8 +1,8 @@
 import React from "react";
-import SearchVerticalCard from "@/components/cards/search-vertical-Card";
+import SearchVerticalCard from "../components/cards/search-vertical-Card";
 import Image from "next/image";
-import Button from "@/components/ui/button";
-import Dropdown from "@/components/ui/custom-dropdown";
+import Button from "../components/ui/button";
+import Dropdown from "../components/ui/custom-dropdown";
 
 function page() {
   return (

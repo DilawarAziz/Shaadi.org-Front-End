@@ -1,5 +1,5 @@
 import React from 'react'
-import Dropdown from "@/components/ui/custom-dropdown";
+import Dropdown from "../../../components/ui/custom-dropdown";
 function Personalinfo() {
   return (
     <div className="p-5">

@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from "@/components/ui/button";
-import Checkbox from '@/components/forms/checkbox'
-import Dropdown from "@/components/ui/custom-dropdown";
+import Button from "../../../components/ui/button";
+import Checkbox from '../../../components/forms/checkbox'
+import Dropdown from "../../../components/ui/custom-dropdown";
 
 function Quicksearch() {
   const ageArray = Array.from({ length: 100 }, (_, index) => index + 1);
