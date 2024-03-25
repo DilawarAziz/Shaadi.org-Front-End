@@ -1,12 +1,12 @@
-import NavBar from "../components/header/header";
-import Button from "../components/ui/button";
+import NavBar from "@/components/header/header";
+import Button from "@/components/ui/button";
 import Image from "next/image";
 import { TiTick } from "react-icons/ti";
 import { CiGlobe } from "react-icons/ci";
-import Proposals from "../components/sections/proposals";
+import Proposals from "@/components/sections/proposals";
 import { FaUser } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import Getnow from "../components/sections/getnow";
+import Getnow from "@/components/sections/getnow";
 export default function Home() {
   return (
     <main>
@@ -48,7 +48,7 @@ export default function Home() {
           <span className="text-red">ذکر ہماری ویب سائٹ پر کیا گیا ہے۔</span>
         </h1>
       </div>
-      <div className="bg-red py-8">
+      <div className="bg-red-image !bg-red py-8 -z-10">
         <div className="  text-center max-w-screen-xl mx-auto space-y-4">
           <h1
             data-aos-delay="400"
@@ -113,6 +113,9 @@ export default function Home() {
           </Button>
         </div>
       </div>
+      <div className="red-flower-image w-full bg-redLight h-10 rotate-180">
+
+      </div>
       <div className="bg-redLight py-8">
         <div className="grid grid-cols-2 max-w-screen-xl mx-auto  gap-10 items-center">
           <div
@@ -159,7 +162,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-red py-8">
+      <div className="bg-red bg-red-image py-8">
         <div className="grid grid-cols-2 max-w-screen-xl mx-auto  gap-10 items-center">
           <div
             data-aos-delay={"400"}
@@ -209,15 +212,15 @@ export default function Home() {
               height="315"
               src="https://www.youtube.com/embed/kNFegah4qIQ?si=7A3e7fE7I5DDdlOI"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
         </div>
       </div>
-      <div className="bg-white py-8">
+      <div className="bgwhite py-8">
         <div className=" max-w-screen-xl mx-auto text-center   items-center">
           <h1
             data-aos-delay={"400"}
@@ -252,7 +255,7 @@ export default function Home() {
           <div
             data-aos-delay={"550"}
             data-aos="fade-up"
-            className="shadow-xl relative h-[300px] mt-[200px] flex items-center justify-center  w-[380px] p-4 mx-auto rounded-xl"
+            className="shadow-xl relative h-[300px] mt-[200px] flex items-center justify-center  w-[380px] p-4 mx-auto rounded-xl bg-white"
           >
             <Image
               src={"/landing/default-image.jpg"}
@@ -295,7 +298,7 @@ export default function Home() {
               data-aos-delay={items}
               data-aos="fade-up"
               key={index}
-              className="shadow-xl relative flex justify-center flex-col items-center w-full   p-4 mx-auto rounded-xl"
+              className="shadow-xl bg-white relative flex justify-center flex-col items-center w-full   p-4 mx-auto rounded-xl"
             >
               <Image
                 src={"/landing/default-image.jpg"}
@@ -314,7 +317,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="bg-red py-9">
+      <div className="bg-red bg-red-image py-9">
         <div className="max-w-screen-xl mx-auto  ">
           <div
             data-aos-delay={"400"}
@@ -348,7 +351,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white py-8">
+      <div className="bgwhite py-8">
         <div className=" max-w-screen-xl mx-auto text-center   items-center">
           <h1
             data-aos-delay={"400"}
@@ -433,7 +436,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-red py-8">
+      <div className="bg-red bg-red-image py-8">
         <div className=" max-w-screen-xl space-y-6 mx-auto text-center   items-center">
           <h1
             data-aos-delay={"400"}
@@ -477,7 +480,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white py-8 ">
+      <div className="bgwhite py-8 ">
         <div className=" max-w-screen-xl mx-auto text-center space-y-6  items-center">
           <h1 className="text-4xl font-bold   ">
             Grand Matchmaking Events Highlights
@@ -521,7 +524,7 @@ export default function Home() {
           <Button className={""}> Veiw More</Button>
         </div>
       </div>
-      <div className="bg-red py-8">
+      <div className=" bg-red-image py-8">
         <div className="max-w-screen-xl mx-auto">
           <div className="space-y-3">
             <h1 className="text-4xl font-bold  text-center ">Best Proposals</h1>
@@ -588,21 +591,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
+      <div className="relative bgwhite py-8 flex justify-center ">
+       
         <div className="max-w-screen-xl space-y-10 z-10  ">
           <Proposals title={"USA Proposals"} />
           <Proposals title={"Canada Proposals"} />
         </div>
       </div>
-      <div className="bg-red flex justify-center space-y-4 flex-col items-center pb-10">
+      <div className="bg-red-image flex justify-center space-y-4 flex-col items-center pb-10">
         <div className="flex ">
           <Image
             src={"/landing/shaadi-organization-pakistan-perfect-match.png"}
@@ -623,7 +619,7 @@ export default function Home() {
           Register Now
         </Button>
       </div>
-      <div className="relative py-8 flex justify-center ">
+      <div className="bgwhite relative py-8 flex justify-center ">
         <Image
           src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
           width={0}
@@ -647,15 +643,8 @@ export default function Home() {
           }
         />
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
+      <div className="bgwhite relative py-8 flex justify-center ">
+      
         <div className="max-w-screen-xl space-y-10 z-10">
           <Proposals title={"USA Proposals"} />
           <Proposals title={"Canada Proposals"} />
@@ -669,16 +658,9 @@ export default function Home() {
           image={"shaadi-orginazation-pakistan-happy-client.png"}
         />
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
-        <div className="max-w-screen-xl space-y-10 z-10 z-10">
+      <div className="bgwhite relative py-8 flex justify-center ">
+       
+        <div className="max-w-screen-xl space-y-10 z-10">
           <Proposals title={"UK  Proposals"} />
           <Proposals title={"France / Italy / Spain / Germany Proposals"} />
         </div>
@@ -693,15 +675,8 @@ export default function Home() {
           }
         />
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
+      <div className=" bgwhite relative py-8 flex justify-center ">
+       
         <div className="max-w-screen-xl space-y-10 z-10">
           <Proposals title={"Australia  Proposals"} />
           <Proposals title={"Saudia  Proposals"} />
@@ -715,15 +690,8 @@ export default function Home() {
           image={"img3.png"}
         />
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
+      <div className="bgwhite relative py-8 flex justify-center ">
+       
         <div className="max-w-screen-xl space-y-10 z-10">
           <Proposals title={"UK  Proposals"} />
           <Proposals title={"France / Italy / Spain / Germany Proposals"} />
@@ -739,15 +707,8 @@ export default function Home() {
           }
         />
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
+      <div className="bgwhite relative py-8 flex justify-center ">
+       
         <div className="max-w-screen-xl space-y-10 z-10">
           <Proposals title={"USA Proposals"} />
           <Proposals title={"Canada Proposals"} />
@@ -761,15 +722,8 @@ export default function Home() {
           image={"shaadi-orginazation-pakistan-happy-client.png"}
         />
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
+      <div className="bgwhite relative py-8 flex justify-center ">
+       
         <div className="max-w-screen-xl space-y-10 z-10">
           <Proposals title={"USA Proposals"} />
           <Proposals title={"Canada Proposals"} />
@@ -783,21 +737,14 @@ export default function Home() {
           image={"shaadi-orginazation-pakistan-happy-client.png"}
         />
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
+      <div className="bgwhite relative py-8 flex justify-center ">
+        
         <div className="max-w-screen-xl space-y-10 z-10">
           <Proposals title={"USA Proposals"} />
           <Proposals title={"Canada Proposals"} />
         </div>
       </div>
-      <div className="bg-red flex justify-center space-y-4 flex-col items-center pb-10">
+      <div className="bg-red-image flex justify-center space-y-4 flex-col items-center pb-10">
         <div className="flex ">
           <Image
             src={"/landing/shaadi-organization-pakistan-perfect-match.png"}
@@ -815,21 +762,14 @@ export default function Home() {
           Register Now
         </Button>
       </div>
-      <div className="relative py-8 flex justify-center ">
-        <Image
-          src={"/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png"}
-          width={0}
-          height={0}
-          className="w-full absolute top-0 left-0 h-full"
-          sizes="100vw"
-          alt="cerficateimg"
-        />
+      <div className="relative bgwhite py-8 flex justify-center ">
+       
         <div className="max-w-screen-xl space-y-10 z-10">
           <Proposals title={"USA Proposals"} />
           <Proposals title={"Canada Proposals"} />
         </div>
       </div>
-      <div className="bg-red py-8 ">
+      <div className="bg-red-image py-8 ">
         <div className=" max-w-screen-xl mx-auto text-center space-y-6  items-center">
           <h1 className="text-4xl font-bold  text-white ">
             Our Special Guests
@@ -872,7 +812,7 @@ export default function Home() {
           <Button type={"white"}> Veiw More</Button>
         </div>
       </div>
-      <div className="py-8 ">
+      <div className="py-8 bgwhite">
         <div className=" max-w-screen-xl mx-auto text-center space-y-6  items-center">
           <h1 className="text-4xl font-bold  text-red ">
             Grand Matchmaking Events
@@ -955,7 +895,7 @@ export default function Home() {
           <Button type={"white"}> Veiw More</Button>
         </div>
       </div>
-      <div className="py-8 ">
+      <div className="py-8 bgwhite">
         <div className=" max-w-screen-xl mx-auto text-center space-y-6  items-center">
           <h1 className="text-4xl font-bold  text-red ">Family Meetings</h1>
 
@@ -996,7 +936,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="bg-red">
+        <div className="bg-red-image">
           <div className="max-w-screen-xl grid grid-cols-2  items-center gap-6 mx-auto py-8">
             <div className="space-y-4  ">
               <h1 className="text-4xl text-white font-bold">
@@ -1025,7 +965,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-8">
+      <div className="py-8 bgwhite">
         <div className="  text-center max-w-screen-xl mx-auto space-y-4">
           <h1 className="text-3xl font-bold">Public Notices</h1>
           <div className="w-[30%] mx-auto ">
@@ -1060,7 +1000,7 @@ export default function Home() {
           <Button>View More</Button>
         </div>
       </div>
-      <div className="py-8">
+      <div className="py-8 bgwhite">
         <div className="  text-center max-w-screen-xl mx-auto space-y-4">
           <h1 className="text-3xl font-bold">Public Notices</h1>
           <div className="w-[30%] mx-auto ">
@@ -1081,7 +1021,7 @@ export default function Home() {
             {[1, 2].map((items, index) => (
               <div
                 key={index}
-                className="grid grid-cols-2 gap-4 bg-[#fdf3f4] items-center rounded-xl p-4"
+                className="grid grid-cols-2 gap-4 bg-white items-center rounded-xl p-4"
               >
                 <Image
                   src={"/landing/doosribiwi-site-image.jpg"}

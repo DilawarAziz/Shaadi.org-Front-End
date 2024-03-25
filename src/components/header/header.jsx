@@ -21,7 +21,7 @@ const NavBar = () => {
   //   // related: https://stackoverflow.com/a/63408216
   //   handleScroll();
 
-  //   window.addEventListener("scroll", handleScroll , { passive: true });
+  //   window.addEventListener("scroll", handleScroll );
   //   return () => {
   //     window.removeEventListener("scroll", handleScroll);
   //   };

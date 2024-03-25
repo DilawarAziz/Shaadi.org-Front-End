@@ -15,11 +15,11 @@ function SearchCard() {
         src={"/landing/searchuser.jpg"}
         width={0}
         height={0}
-        className="w-[10%] "
+        className="w-[20%] max-h-[200px]"
         sizes="100vw"
         alt="cerficateimg"
       />
-      <div className="w-[90%]">
+      <div className="w-[80%]">
         <h1 className="text-red font-semibold">Faisal Rafique</h1>
         <div className="flex gap-4 items-center">
           <h2>Profile Complete</h2>
@@ -43,7 +43,10 @@ function SearchCard() {
           </ul>
         ))}
       </div>
+      <div className="flex gap-2 items-center">
+    <button className="text-white rounded-lg bg-[#e62e04] cursor-pointer text-center w-full py-1 my-2">56% Match</button>
     <button className="text-white rounded-lg bg-[#3caee6] cursor-pointer text-center w-full py-1 my-2">View Profile</button>
+      </div>
       </div>
     </div>
   );

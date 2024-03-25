@@ -5,6 +5,22 @@
 .bgwhite {
   background-image: url('/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png');
   background-repeat: repeat;
+  background-size: 200px;
+  object-fit: fill;
+  background-color: #fcf2f3;
+
+}
+.bg-red-image {
+  background-image: url('/landing/Shaadi-Organization-Pakistani-Rishtay-Pattern.png');
+  background-repeat: repeat;
+  background-size: 200px;
+  object-fit: fill;
+  background-color: #9B2C47;
+
+}
+.red-flower-image {
+  background-image: url('/landing/shaadi-organization-pakistan-border-hr.png');
+  background-repeat: repeat;
 }
 
 

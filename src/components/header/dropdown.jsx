@@ -43,19 +43,15 @@ const Dropdown = ({ title, className, drophover, options, iconStyle }) => {
             id="dropdown"
             className={`z-10 absolute  w-[fit-content] whitespace-nowrap bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 `}
           >
-            <ul
+            <div
               className="py-2  overflow-auto  text-sm text-gray-700 bg-white rounded-lg"
               aria-labelledby="dropdownDefaultButton"
             >
               {options?.map((items, index) => (
-                <li
-                  key={index}
-                  className={`block px-4 py-2 hover:bg-red hover:text-white transition-all duration-100 cursor-pointer text-nowrap  w-full font-semibold `}
-                >
-                  <Link href={"/about-us"}>{items}</Link>
-                </li>
+              
+                  <Link key={index} className={`block px-4 py-2 hover:bg-red hover:text-white transition-all duration-100 cursor-pointer text-nowrap  w-full font-semibold `} href={"/about-us"}>{items}</Link>
               ))}
-            </ul>
+            </div>
           </div>
         )}
       </div>

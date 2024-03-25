@@ -1,16 +1,16 @@
 import React from 'react'
-import Button from "../../../components/ui/button";
-import Checkbox from '../../../components/forms/checkbox'
-import Dropdown from "../../../components/ui/custom-dropdown";
+import Button from "@/components/ui/button";
+import Checkbox from '@/components/forms/checkbox'
+import Dropdown from "@/components/ui/custom-dropdown";
 
 function Quicksearch() {
   const ageArray = Array.from({ length: 100 }, (_, index) => index + 1);
 
   return (
     <div className='p-5'>
-        <div className='flex gap-4 items-center justify-around'>
-            <Button className={"hover:!scale-100"}>Male</Button>
-            <Button className={"hover:!scale-100"}>Female</Button>
+        <div className='grid grid-cols-2 gap-2'>
+            <Button className={"hover:!scale-100 !px-4 !w-full"}>Male</Button>
+            <Button className={"hover:!scale-100 !px-4 !w-full"}>Female</Button>
         </div>
         <div className='space-y-2 my-4'>
           <Checkbox title={"Only Featured Profiles"}/>

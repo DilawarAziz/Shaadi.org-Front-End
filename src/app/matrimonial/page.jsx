@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
-import Button from "../components/ui/button";
+import Button from "@/components/ui/button";
 
 function Page() {
   return (

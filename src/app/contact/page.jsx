@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../components/ui/button";
+import Button from "@/components/ui/button";
 function Page() {
     const contacts = [
         { name: 'Mrs. Ali', phone: '+923452444262' },
