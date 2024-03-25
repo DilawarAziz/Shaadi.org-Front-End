@@ -77,7 +77,7 @@ export default function Home() {
             data-aos="fade-up"
             className="text-xl font-bold text-yellow"
           >
-            Trademarks, Copyrights, Government's License & Certificates
+            Trademarks, Copyrights, Government&apos;s License & Certificates
           </h2>
           <p
             data-aos-delay="400"
@@ -86,12 +86,12 @@ export default function Home() {
           >
             Shaadi Organization® Pakistan is a licensed, registered, and
             recognized marriage bureau from the Government of Pakistan. Our
-            name, logo, events' name, and taglines are all registered under the
+            name, logo, events&apos; name, and taglines are all registered under the
             Trademark and Copyright Acts of the Government of Pakistan. We are
             also registered and associated with a number of local, provincial,
             and federal departments of the Government of Pakistan, media
             personalities, and media channels. You can see Trademarks,
-            Copyrights, Government's License & Certificates on the link below.
+            Copyrights, Government&apos;s License & Certificates on the link below.
           </p>
           <div className="grid grid-cols-5 gap-8">
             {[300, 400, 500, 600, 700].map((items, index) => (
@@ -504,7 +504,7 @@ export default function Home() {
             className="grid grid-cols-6  gap-10"
           >
             {[12, 3, 4, 5, 6, 3].map((items, index) => (
-              <div className="over- overflow-hidden border-red border-4 rounded-tl-[50px] rounded-br-[50px]">
+              <div  key={index} className="over- overflow-hidden border-red border-4 rounded-tl-[50px] rounded-br-[50px]">
                 <Image
                   src={"/landing/9980.jpg"}
                   width={0}
@@ -545,7 +545,7 @@ export default function Home() {
               className="grid grid-cols-3  gap-10"
             >
               {[1, 2, 3].map((items, index) => (
-                <div className="p-4 flex items-center gap-4 bg-white rounded-xl !rounded-tl-none">
+                <div key={index} className="p-4 flex items-center gap-4 bg-white rounded-xl !rounded-tl-none">
                   <div className="relative">
                     <Image
                       src={"/landing/default-image.jpg"}
@@ -852,7 +852,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-6  gap-10">
             {[12, 3, 4, 5, 6, 3].map((items, index) => (
-              <div className="relative  overflow-hidden border-yellow border-4 rounded-tr-[50px] ">
+              <div key={index} className="relative  overflow-hidden border-yellow border-4 rounded-tr-[50px] ">
                 <Image
                   src={"/landing/9980.jpg"}
                   width={0}
@@ -894,7 +894,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-6  gap-10">
             {[12, 3, 4, 5, 6, 3].map((items, index) => (
-              <div className="relative  overflow-hidden border-yellow border-4 rounded-tl-[50px] ">
+              <div key={index} className="relative  overflow-hidden border-yellow border-4 rounded-tl-[50px] ">
                 <Image
                   src={"/landing/9980.jpg"}
                   width={0}
@@ -929,13 +929,13 @@ export default function Home() {
             />
           </div>
           <p className="text-white font-semibold ">
-            If you're looking for a life partner and don't know where to start,
+            If you&apos;re looking for a life partner and don&apos;t know where to start,
             visit our offices today and our professional matchmakers will guide
             you in accordance with your preferences.
           </p>
           <div className="grid grid-cols-6  gap-10">
             {[12, 3, 4, 5, 6, 3].map((items, index) => (
-              <div className="relative  overflow-hidden border-yellow border-4 rounded-tr-[50px] ">
+              <div key={index} className="relative  overflow-hidden border-yellow border-4 rounded-tr-[50px] ">
                 <Image
                   src={"/landing/9980.jpg"}
                   width={0}
@@ -975,7 +975,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-6  gap-10">
             {[12, 3, 4, 5, 6, 3].map((items, index) => (
-              <div className="relative  overflow-hidden border-yellow border-4 rounded-tl-[50px] ">
+              <div key={index} className="relative  overflow-hidden border-yellow border-4 rounded-tl-[50px] ">
                 <Image
                   src={"/landing/9980.jpg"}
                   width={0}

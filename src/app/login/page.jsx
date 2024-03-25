@@ -70,16 +70,8 @@ const Page = () => {
                 className=" !rounded-full hover:!scale-100 hover:bg-red hover:text-white transition-all !duration-300  font-[12px] w-full px-4 text-red bg-primary"
                 type="submit"
               >
-                {!loader ? (
-                  "Login"
-                ) : (
-                  <Loader
-                    className={
-                      "!bg-red  !items-center !justify-center hover:!bg-[#5168cc]"
-                    }
-                    size={"w-5 h-5 border-white "}
-                  />
-                )}
+                Login
+            
               </Button>
             </div>
             <div>

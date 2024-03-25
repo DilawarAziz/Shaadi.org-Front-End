@@ -21,7 +21,7 @@ function Proposals({ title }) {
 
       <div className="grid grid-cols-3  gap-10 ">
         {[400,500,600].map((items, index) => (
-          <div  data-aos-delay={"500"}
+          <div key={index} data-aos-delay={"500"}
           data-aos={`fade-${index===0 ? "right" : index===1 ? "up" : index===2 ? "left" : ""}`}
  className="p-4 flex items-center gap-4  shadow-xl   !bg-white rounded-xl !rounded-tl-none">
             <div className="relative">

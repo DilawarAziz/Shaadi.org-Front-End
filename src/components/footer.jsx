@@ -111,8 +111,8 @@ function Footer() {
                 or slogans without our written permission.
               </p>
               <p>
-                "We hereby declare that Shaadi.org.pk@ website is not a dating
-                website and it is strictly for matrimonial purpose only."
+                We hereby declare that Shaadi.org.pk@ website is not a dating
+                website and it is strictly for matrimonial purpose only.
               </p>
             </div>
             <div>
